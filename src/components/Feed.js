@@ -1,6 +1,7 @@
 import React from "react";
 import "./Feed.css";
 import TweetBox from "./subcontent/TweetBox";
+import Post from "./subcontent/Post";
 
 function Feed() {
   return (
@@ -14,6 +15,7 @@ function Feed() {
       <TweetBox />
 
       {/* Post */}
+      <Post />
       {/* Post */}
       {/* Post */}
       {/* Post */}
