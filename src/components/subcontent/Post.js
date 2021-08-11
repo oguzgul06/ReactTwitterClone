@@ -18,8 +18,8 @@ function Post({ displayName, username, verified, text, image, avatar }) {
           <div className="post__headerText">
             <h3>
               Oğuz GÜL{" "}
-              <span>
-                <VerifiedUserIcon className="post__badge" />
+              <span className="post__headerSpecial">
+                <VerifiedUserIcon className="post__badge" /> @OguzGul
               </span>
             </h3>
           </div>
