@@ -11,26 +11,24 @@ function Post({ displayName, username, verified, text, image, avatar }) {
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="https://tibatu.com/wp-content/uploads/2020/10/flat-business-man-user-profile-avatar-icon-vector-4333097.jpg" />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Oğuz GÜL{" "}
+              {displayName}{" "}
               <span className="post__headerSpecial">
-                <VerifiedUserIcon className="post__badge" /> @OguzGul
+                {verified && <VerifiedUserIcon className="post__badge" />} 
+                @{username}
               </span>
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>I challenge you to build a Twitter Clone with React</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          src="https://media3.giphy.com/media/65ATdpi3clAdjomZ39/giphy.gif"
-          alt=""
-        />
+        <img src={image} alt="" />
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
